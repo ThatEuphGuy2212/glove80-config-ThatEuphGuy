@@ -348,14 +348,13 @@ behaviors {
                 , <&sk LSHFT>;
         };
 
-        end: end {
-            label = "&END";
+        Ending: Ending {
+            label = "&ENDING";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <5>;
             bindings = <&kp CAPS>
-                , <&kp E>
-                , <&kp N>
-                , <&kp D>
+                , <&kp E &kp N &kp D>
                 , <&kp CAPS>
                 , <&kp DOT>;
         };
@@ -365,29 +364,14 @@ behaviors {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <5>;
-            bindings = <&sk LSHFT>
-                , <&kp N>
-                , <&kp O>
-                , <&kp SPACE>
+            bindings = <&skq LSHFT &kp N>
+                , <&kp O &kp SPACE>
                 , <&kp CAPS>
-                , <&kp S>
-                , <&kp I>
-                , <&kp COMMA>
-                , <&kp SPACE>
-                , <&kp H>
-                , <&kp I>
-                , <&kp COMMA>
-                , <&kp SPACE>
+                , <&kp S &kp I &kp COMMA &kp SPACE &kp H &kp I &kp COMMA &kp SPACE>
                 , <&kp CAPS>
-                , <&kp O>
-                , <&kp R>
-                , <&kp SPACE>
+                , <&kp O &kp R &kp SPACE>
                 , <&kp CAPS>
-                , <&kp S>
-                , <&kp I>
-                , <&kp B>
-                , <&kp SEMI>
-                , <&kp SPACE>
+                , <&kp S &kp I &kp B &kp SEMI &kp SPACE>
                 , <&kp CAPS>
                 , <&to 0>;
         };
@@ -439,7 +423,7 @@ behaviors {
             &kp GRAVE    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                                                                          &kp N6  &kp N7    &kp N8    &kp N9    &kp N0   &kp BSLH
              &kp CAPS     &kp J     &kp Y     &kp O      &kp U  &kp MINUS                                                                           &kp Q   &kp G     &kp N     &kp W     &kp K  &kp EQUAL
               &kp RET     &kp H     &kp I     &kp E      &kp A  &kp COMMA                                                                           &kp M   &kp D     &kp R     &kp S     &kp P      &kp V
-            &kp LCTRL     &kp X  &kp FSLH   &kp SQT      &pdnc   &kp SEMI  &sk LSHFT  &kp LALT             &kp DEL   &kp ESC  &kp RALT  &sk RSHFT   &kp Z   &kp C     &kp L     &kp F     &kp B  &kp PG_UP
+            &kp LCTRL     &kp X  &kp FSLH   &kp SQT      &pdnc   &kp SEMI  &skq LSHFT  &kp LALT             &kp DEL   &kp ESC  &kp RALT  &skq RSHFT   &kp Z   &kp C     &kp L     &kp F     &kp B  &kp PG_UP
  &magic LAYER_Magic 0  &kp HOME   &kp END  &kp LEFT  &kp RIGHT             &kp SPACE   &kp TAB  &sl LAYER_Shortcut  &kp RGUI  &kp BSPC      &kp T          &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
