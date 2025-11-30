@@ -327,7 +327,7 @@ behaviors {
             #binding-cells = <0>;
             bindings = <&kp DOT>
                 , <&kp SPACE>
-                , <&sk LSHFT>;
+                , <&skq LSHFT>;
         };
 
         QMNxtSntc: QMNxtSntc {
@@ -336,7 +336,7 @@ behaviors {
             #binding-cells = <0>;
             bindings = <&kp LS(FSLH)>
                 , <&kp SPACE>
-                , <&sk LSHFT>;
+                , <&skq LSHFT>;
         };
 
         EMNxtSntc: EMNxtSntc {
@@ -345,7 +345,7 @@ behaviors {
             #binding-cells = <0>;
             bindings = <&kp LS(N1)>
                 , <&kp SPACE>
-                , <&sk LSHFT>;
+                , <&skq LSHFT>;
         };
 
         ending: ending {
@@ -365,7 +365,7 @@ behaviors {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <5>;
-            bindings = <&sk LSHFT>
+            bindings = <&skq LSHFT>
                 , <&kp N>
                 , <&kp O>
                 , <&kp SPACE>
@@ -439,7 +439,7 @@ behaviors {
             &kp GRAVE    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                                                                          &kp N6  &kp N7    &kp N8    &kp N9    &kp N0   &kp BSLH
              &kp CAPS     &kp J     &kp Y     &kp O      &kp U  &kp MINUS                                                                           &kp Q   &kp G     &kp N     &kp W     &kp K  &kp EQUAL
               &kp RET     &kp H     &kp I     &kp E      &kp A  &kp COMMA                                                                           &kp M   &kp D     &kp R     &kp S     &kp P      &kp V
-            &kp LCTRL     &kp X  &kp FSLH   &kp SQT      &pdnc   &kp SEMI  &sk LSHFT  &kp LALT             &kp DEL   &kp ESC  &kp RALT  &sk RSHFT   &kp Z   &kp C     &kp L     &kp F     &kp B  &kp PG_UP
+            &kp LCTRL     &kp X  &kp FSLH   &kp SQT      &pdnc   &kp SEMI  &skq LSHFT  &kp LALT             &kp DEL   &kp ESC  &kp RALT  &skq RSHFT   &kp Z   &kp C     &kp L     &kp F     &kp B  &kp PG_UP
  &magic LAYER_Magic 0  &kp HOME   &ending  &kp LEFT  &kp RIGHT             &kp SPACE   &kp TAB  &sl LAYER_Shortcut  &kp RGUI  &kp BSPC      &kp T          &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
